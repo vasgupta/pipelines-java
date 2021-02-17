@@ -8,7 +8,7 @@
       
       - task: AzureCLI@2
   inputs:
-    scriptType: 'cli'
+    scriptType: 'ps'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage account create -n mystorageaccount -g Team-India'
 # Build your Java project and run tests with Apache Maven.
