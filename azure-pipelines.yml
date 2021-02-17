@@ -1,4 +1,12 @@
 # Maven
+- task: AzurePowerShell@5
+  inputs:
+    ScriptType: 'InlineScript'
+    Inline: |
+      # You can write your azure powershell scripts inline here. 
+      # You can also pass predefined and custom variables to this script using arguments
+      
+      az storage account create -n mystorageaccount -g Team-India
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
